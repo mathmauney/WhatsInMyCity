@@ -2,8 +2,9 @@ import json
 import requests
 limit = 50
 offset = 0
+location = "Washington,DC"
 api_token = ''
-api_url = 'https://api.yelp.com/v3/businesses/search?location="Washington,DC"&term="restaurants"&limit='+str(limit)+'&offset='+str(offset)
+api_url = 'https://api.yelp.com/v3/businesses/search?location='+ location +'&term="restaurants"&limit='+str(limit)+'&offset='+str(offset)
 
 headers = {'Authorization': 'Bearer {0}'.format(api_token)}
            
